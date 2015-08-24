@@ -1,2 +1,4 @@
 skip_not_working_tests.patch
 remove_intersphinx.patch
+test-datatypes.patch
+test-issue-36.patch
