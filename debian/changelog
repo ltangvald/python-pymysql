@@ -1,3 +1,13 @@
+python-pymysql (0.7.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version is 3.9.8 now (no change)
+  * Change directory to $ADTTMP before running Debian tests
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+  * Added parse_error_fix.patch (Fix syntax error in test_cursor)
+
+ -- Ondřej Nový <novy@ondrej.org>  Sun, 22 May 2016 19:14:58 +0200
+
 python-pymysql (0.7.2-1) unstable; urgency=medium
 
   * New upstream version (Closes: #799776)
