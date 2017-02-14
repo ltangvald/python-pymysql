@@ -1,3 +1,10 @@
+python-pymysql (0.7.9-2ubuntu1) zesty; urgency=medium
+
+  * Merged from Debian unstable
+  * Removed obsolete patches: test-datatypes and test-issue-36
+
+ -- Lars Tangvald <lars.tangvald@oracle.com>  Tue, 14 Feb 2017 11:40:53 +0100
+
 python-pymysql (0.7.9-2) unstable; urgency=medium
 
   * Using correct options for mysql_install_db (Closes: #841593).
@@ -17,6 +24,18 @@ python-pymysql (0.7.7-1) unstable; urgency=medium
   * Removed python-six{3,} build depends - it's not used.
 
  -- Ondřej Nový <onovy@debian.org>  Fri, 02 Sep 2016 11:40:40 +0200
+
+python-pymysql (0.7.6-1ubuntu1) yakkety; urgency=medium
+
+  * Fix ftfs with MySQL 5.7
+    - d/run_tests.sh was using old MySQL initialization. Updated for 5.7:
+      - Switched mysql_install_db with mysqld --initialize
+      - Removed deprecated option --skip-grant from mysqld
+      - Added -uroot to client commands
+    (LP: #1592664)
+
+ -- Lars Tangvald <lars.tangvald@oracle.com>  Tue, 05 Jul 2016 10:37:47 +0200
+
 python-pymysql (0.7.6-1) unstable; urgency=medium
 
   * New upstream release
@@ -85,3 +104,4 @@ python-pymysql (0.6.2-1) unstable; urgency=medium
   * Initial release. (Closes: #770889)
 
  -- Thomas Goirand <zigo@debian.org>  Mon, 27 Oct 2014 19:29:19 +0800
+
